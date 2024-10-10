@@ -59,10 +59,10 @@ theo công thức cv=a+b+c, s=sqrt(p*(p-a)*(p-b)*(p-c)) với p=cv/2 (3 số a, 
 //(Năm nhuận là năm chia hết cho 400 hoặc chia hết cho 4 nhưng không chia hết cho 100).
 
 //19 Nhập vào số xe (có năm chữ số) trong biển số xe máy của bạn. Cho biết số xe của bạn được mấy nút. Bạn là người may mắn nếu số nút=9. 
-//Bạn có may mắn không?
-//Ví dụ: số xe là 45046, tổng các chữ số là 4+ 5 +0+ 4 + 6 = 19 thì 19 mod 10 =9. Số nút là 9: may man. Số xe 12340, 
-//tổng các chữ số là 1+2+3+4+0=10 thì 10 mod 10=0. Số nút là 0: chua may man
+/*Bạn có may mắn không?
+Ví dụ: số xe là 45046, tổng các chữ số là 4+ 5 +0+ 4 + 6 = 19 thì 19 mod 10 =9. Số nút là 9: may man. Số xe 12340, 
+tổng các chữ số là 1+2+3+4+0=10 thì 10 mod 10=0. Số nút là 0: chua may man */
 
 //20 Nhập một số tiền N (N<=1.000.000) đồng (N là số chia hêt cho 1.000), đổi ra xem được bao nhiêu tờ 5.000 đồng, 
-//bao nhiêu tờ 2.000 đồng, bao nhiêu tờ 1.000 đồng sao cho tổng số tờ là ít nhất. 
-//Ví dụ N= 43.000 đ = 8 tờ 5.000 đ + 1 tờ 2.000 đ + 1 tờ 1.000 đ.
+/*bao nhiêu tờ 2.000 đồng, bao nhiêu tờ 1.000 đồng sao cho tổng số tờ là ít nhất. 
+Ví dụ N= 43.000 đ = 8 tờ 5.000 đ + 1 tờ 2.000 đ + 1 tờ 1.000 đ.*/
