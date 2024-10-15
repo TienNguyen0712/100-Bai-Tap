@@ -667,4 +667,124 @@ int main(){
     cout<<dem;
     return 0;
 }
+//43
+#include <iostream>
+using namespace std;
+int main() {    
+    int n, c = 0; cin>>n;
+    int arr[n];
+    for(int i = 0; i  < n; i++){
+        cin>>arr[i];
+        if(arr[i] % 2 == 0) c++;
+    }
+	cout<<c;
+    return 0;
+}
+//44
+#include <iostream>
+using namespace std;
+int main() {    
+    int n, c = 0; cin>>n;
+    int arr[n];
+    for(int i = 0; i  < n; i++){
+        cin>>arr[i];
+        if(i % 2 == 0) c+=arr[i];
+    }
+	cout<<c;
+    return 0;
+}
+//45
+#include <iostream>
+using namespace std;
+int main() {    
+    int n, c = 0, d = 0; cin>>n;
+    int arr[n];
+    for(int i = 0; i  < n; i++){
+        cin>>arr[i];
+        if(arr[i] % 2 == 0) c+=arr[i];
+    }
+	if(c == 0) {cout<<"-";} else {cout<<c;}
+    return 0;
+}
+//46
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n, x, m = -1;
+    cin >> n >> x;
+    int arr[n];
+    for(int i = 0; i < n; i++){
+        cin >>  arr[i];
+        if(arr[i] == x){
+           m = i;
+           break;
+        }
+    }
+    if(m != -1){
+        cout<< "Yes" << endl << m;
+    } else {
+        cout << "No";
+    }
+    return 0;
+}
+//47
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n, m = 0, b = 0;
+    cin >> n;
+    int arr[n];
+    for(int i = 0; i < n; i++){
+        cin >>  arr[i];
+        if(arr[i] > 0){
+           m++;
+        }
+        if(arr[i] < 0){
+            b++;
+        }
+    }
+    if(m != 0 || b != 0){
+        cout << m << " " << b << endl;
+        for(int i = 0; i < n; i++){
+            if(arr[i] > 0){
+                cout << arr[i] << " "; 
+            }
+        }
+        cout << endl;
+        for(int j = 0; j < n; j++){
+            if(arr[j] < 0){
+                cout << arr[j] << " ";
+            }
+        }
+    } else {
+        cout << "0" << " " << "0";
+    }
+    if(m == 0){
+        cout << "-";
+    }
+    if(b == 0){
+        cout << "-";
+    }
+    
+    return 0;
+}
+//48
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n, sum = 0;
+    cin >> n;
+    int arr[n];
+    for(int i = 0; i < n; i++){
+        cin >>  arr[i];
+        if(arr[i] % 5 == 0){
+            cout << arr[i] << " ";
+            sum+=arr[i];
+        }
+    }
+    cout << endl << sum;
+    return 0;
+}
+//49
 
+//50
