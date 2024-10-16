@@ -786,5 +786,55 @@ int main(){
     return 0;
 }
 //49
+#include <bits/stdc++.h>
 
+using namespace std;
+void nhap(int a[],int n);
+int main () {
+    int n, d;
+    cin >> n;
+    int arr[n];
+    nhap(arr, n);
+    int max = 1;
+    for(int i = 0; i < n; i++){
+        if(arr[i] > max){ max = arr[i]; d = i;}
+    }
+    cout<< max << " " << d; 
+    return 0;
+}
+void nhap(int a[], int n){
+    for(int i = 0; i < n; i++) cin >> a[i];
+}
 //50
+#include <bits/stdc++.h>
+
+using namespace std;
+void nhap(int a[],int n);
+void swap(int &a, int &b);
+void xuat(int a[], int n);
+int main () {
+    int n;
+    cin >> n;
+    int arr[n];
+    nhap(arr, n);
+    for(int i = 0; i < n; i++){
+        for(int j = i+1; j < n; j++){
+            if(arr[i] > arr[j]){
+                swap(arr[i], arr[j]);
+            }
+        }
+    }
+    xuat(arr, n);
+    return 0;
+}
+void nhap(int a[], int n){
+    for(int i = 0; i < n; i++) cin >> a[i];
+}
+void xuat (int a[], int n){
+    for(int i = 0; i < n; i++) cout << a[i] << " ";
+}
+void swap(int &a, int &b){
+    int temp = a;
+        a = b;
+        b = temp;
+}
