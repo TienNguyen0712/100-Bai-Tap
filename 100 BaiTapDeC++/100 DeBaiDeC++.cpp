@@ -112,4 +112,5 @@ Vd: n=7 là số nguyên tố vì 7 chỉ chia hết cho 1 và 7
 
 n=8 Không là số nguyên tố vì 8 chia hết cho 1 và 8 nhưng còn chia hết cho 2 và 4
 */
+
 //30 Viết chương trình nhập vào 2 số nguyên m và n (m<n). Tính tổng các số nguyên từ m đến n
