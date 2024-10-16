@@ -66,3 +66,50 @@ tổng các chữ số là 1+2+3+4+0=10 thì 10 mod 10=0. Số nút là 0: chua 
 //20 Nhập một số tiền N (N<=1.000.000) đồng (N là số chia hêt cho 1.000), đổi ra xem được bao nhiêu tờ 5.000 đồng, 
 /*bao nhiêu tờ 2.000 đồng, bao nhiêu tờ 1.000 đồng sao cho tổng số tờ là ít nhất. 
 Ví dụ N= 43.000 đ = 8 tờ 5.000 đ + 1 tờ 2.000 đ + 1 tờ 1.000 đ.*/
+
+//21 Viết chương trình tính tiền taxi căn cứ vào đoạn đường đi, biết rằng
+/*1 km đầu giá 12000đ
+km thứ 2 đến km thứ 30 giá 10000đ
+km thứ 31 trở đi tính 9000đ
+Vd:
+
++ km=3 thìTien=1*12000+(3-1)*10000=12000+20000=32000
+
++ km=40 thì Tien=12000+29*10000+(40-30)*9000=392000
+*/
+
+//22 Viết chương trình nhập vào số KW/h điện tiêu thụ trong 1 tháng và tính tiền điện sử dụng trong 1 tháng đó. 
+/*Biết rằng, 50 KW/h đầu được tính với giá 600đ mỗi KW/h, 50 KW/h tiếp theo được tính với giá 800đ mỗi KW/h, 
+100 KW/h tiếp theo được tính với giá 1100đ mỗi KW/h, những KW/h tiếp theo được tính với giá 1500đ mỗi KW/h.
+
+Vd:
+
++ Số điện = 40 thì số tiền = 40*600=24000
+
++ Số điện = 70 thì số tiền = 50*600 + (70-50)*800=46000
+
++ Số điện = 110 thì số tiền = 50*600 + 50*800 + (110-50-50)*1100=81000
+
++ Số điện = 230 thì số tiền = 50*600 + 50*800 + 100*1100 + (230-50-50-100)*1500=225000
+*/
+
+//23 Viết chương trình nhập vào 1 số nguyên dương n. In ra những số chia hết cho 3 trong các số từ 1 đến n, nếu không có số nào thì in -.
+
+//24 Viết chương trình nhập vào 1 số nguyên dương n. In ra số lượng số chia hết cho 3 trong các số từ 1 đến n
+
+//25 Viết chương trình nhập vào 1 số nguyên dương n. Tính tổng những số chẵn từ 1 đến n.
+
+//26 Viết chương trình nhập vào 1 số nguyên dương n. Tính tổng những số chia hết cho 3 và 5 từ 1 đến n
+
+//27 Viết chương trình nhập vào 1 số nguyên dương n. Tính tổng những số chia hết cho 3 hoặc 5 từ 1 đến n
+
+//28 Viết chương trình nhập vào 1 số nguyên dương n. Đếm xem n có bao nhiêu ước
+
+//29 Viết chương trình nhập vào 1 số nguyên dương n. Cho biết n có phải là số nguyên tố hay không? 
+/*Số nguyên tố là số chỉ chia hết cho 1 và chính nó (chỉ có 2 ước)
+
+Vd: n=7 là số nguyên tố vì 7 chỉ chia hết cho 1 và 7
+
+n=8 Không là số nguyên tố vì 8 chia hết cho 1 và 8 nhưng còn chia hết cho 2 và 4
+*/
+//30 Viết chương trình nhập vào 2 số nguyên m và n (m<n). Tính tổng các số nguyên từ m đến n
