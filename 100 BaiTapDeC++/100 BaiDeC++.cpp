@@ -837,4 +837,96 @@ void swap(int &a, int &b){
     int temp = a;
         a = b;
         b = temp;
+//51
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+bool isPrime(int num) {
+    if (num == 2) return true;
+    for (int i = 2; i <= sqrt(num) + 1; i++) {
+        if (num % i == 0)
+            return false;
+    }
+    return num > 1;
+}
+
+int main() {
+    vector<int> numbers;
+    int num;
+    while (cin >> num) {
+        numbers.push_back(num);
+    }
+    vector<int> primes;
+    int total = 0;
+    for (int num : numbers) {
+        if (isPrime(num)) {
+            primes.push_back(num);
+            total += num;
+        }
+    }
+    if (primes.empty()) {
+        cout << "-";
+    } else {
+        for (int prime : primes) {
+            cout << prime << " ";
+        }
+        cout << endl << total;
+    }
+
+    return 0;
+}
+//52
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+bool isPrime(int num) {
+    if (num == 2) return true;
+    for (int i = 2; i <= sqrt(num) + 1; i++) {
+        if (num % i == 0)
+            return false;
+    }
+    return num > 1;
+}
+
+int main() {
+    vector<int> numbers;
+    int num;
+    while (cin >> num) {
+        numbers.push_back(num);
+    }
+    vector<int> primes;
+    int total = 0, dem = 0;
+    for (int num : numbers) {
+        if (isPrime(num)) {
+            primes.push_back(num);
+            total += num;
+            dem++;
+        }
+    }
+    if (primes.empty()) {
+        cout << "-";
+    } else {
+        cout << fixed << setprecision(2) <<  float(total/dem);
+    }
+
+    return 0;
+}
+//53
+
+//54
+
+//55
+
+//56
+//57
+//58
+//59
+//60
 }
