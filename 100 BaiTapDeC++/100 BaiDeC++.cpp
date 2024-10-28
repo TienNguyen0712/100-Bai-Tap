@@ -929,4 +929,53 @@ int main() {
 //58
 //59
 //60
+//86
+#include <bits/stdc++.h>
+
+using namespace std;
+
+float chuvi (float a, float b, float c){
+    return a + b + c;
+}
+float dientich (float a, float b, float c){
+    float p = (a + b + c)/2;
+    return sqrt(p*(p-a)*(p-b)*(p-c));
+}
+
+int main (){
+    float m, n, c;
+	cin >> m >> n >> c;
+    cout << fixed << setprecision(1) << chuvi(m, n, c);
+    cout <<fixed << setprecision(3) << " " <<dientich(m, n, c);
+    return 0;
+}
+//87
+#include <bits/stdc++.h>
+
+using namespace std;
+
+bool chia5(int n){
+    return n % 5 == 0;
+} 
+
+int main (){
+    int n; cin >> n;
+    if(chia5(n)){ cout << "Yes";} else {cout << "No";}
+    return 0;
+}
+//88
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int ucln (int a, int b){
+	if(b == 0) return a;
+    return ucln(b, a % b);
+}
+int main (){
+    int m, n;
+	cin >> m >> n;
+    cout << m/ucln(m, n) << "/" << n/ucln(m, n);
+    return 0;
+}
 }
