@@ -929,6 +929,9 @@ int main() {
 //58
 //59
 //60
+//61
+//62
+//63
 //86
 #include <bits/stdc++.h>
 
@@ -978,4 +981,61 @@ int main (){
     cout << m/ucln(m, n) << "/" << n/ucln(m, n);
     return 0;
 }
+//89
+#include <bits/stdc++.h>
+
+using namespace std;
+long giathua(int a){
+    if(a == 1) return 1;
+    return a * giathua(a-1);
+}
+int main(){
+    int m, n, k, s = 0;
+    cin >> m;
+    for(int i = 0; i < m; i++){
+        cin >> n >> k;
+        long t = giathua(n) / (giathua(k) * giathua(n-k));
+        s += t;
+    }
+    cout << s;
+    return 0;
+}
+//90
+#include <bits/stdc++.h>
+
+using namespace std;
+long tong(int a, int b, int x){
+    return a * pow(x, b);
+}
+int main(){
+    int m, x, ak, nk, s = 0;
+    cin >> m >> x;
+    for(int i = 0; i < m; i++){
+		cin >> ak >> nk;
+        s+= tong(ak, nk, x);
+    }
+    cout << s;
+    return 0;
+}
+//91
+
+//92
+#include <bits/stdc++.h>
+
+using namespace std;
+int tong(float a, float b){
+    return a + b;
+}
+float chia(float a, float b){
+    return a / b;
+}
+int main(){
+    float a, b, c;
+    cin >> a >> b >> c;
+    cout << tong(a, b) + c << " ";
+    cout << fixed << setprecision(2) << chia(a, b) + c << " ";
+    cout << fixed << setprecision(3) << a/tong(b, c);
+    return 0;
+}
+
 }
