@@ -1037,5 +1037,44 @@ int main(){
     cout << fixed << setprecision(3) << a/tong(b, c);
     return 0;
 }
+//93
+#include <bits/stdc++.h>
 
+using namespace std;
+void timMin(int a, int b, int c){
+	int min = a;
+	if(b < min) min = b;
+	if(c < min) min = c;
+	cout << min;
+} 
+int main(){
+    int a, b, c;
+    cin >> a >> b >> c;
+    timMin(a, b, c);
+    return 0;
+}
+//94
+
+//95
+#include <bits/stdc++.h>
+
+using namespace std;
+int tong(float a[], int b){
+    int s = 0;
+    for(int i = 0; i < b; i++){
+        s+=a[i];
+    }
+    return s;
+} 
+int main(){
+    int n;
+    cin >> n;
+    float arr[n];
+    for(int i = 0; i < n; i++){
+        cin >> arr[i];
+    }
+    float a = tong(arr, n)/n;
+    cout << a;
+    return 0;
+}
 }
