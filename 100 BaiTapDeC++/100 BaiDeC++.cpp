@@ -1059,22 +1059,29 @@ int main(){
 #include <bits/stdc++.h>
 
 using namespace std;
-int tong(float a[], int b){
-    int s = 0;
-    for(int i = 0; i < b; i++){
-        s+=a[i];
-    }
-    return s;
-} 
+void nhap(int a[], int n);
+int tong(int a[], int n);
 int main(){
     int n;
     cin >> n;
-    float arr[n];
-    for(int i = 0; i < n; i++){
-        cin >> arr[i];
-    }
-    float a = tong(arr, n)/n;
-    cout << a;
+    int a[n];
+    nhap(a, n);
+    cout << fixed << setprecision(1) << (double) tong(a, n)/n;
     return 0;
 }
+void nhap(int a[], int n){
+    for (int i = 0; i < n; i++)
+        cin >> a[i];
+}
+
+int tong(int a[], int n){
+    int s = 0;
+    for (int i = 0; i < n; i++)
+    {
+        s+=a[i];
+    }
+    return s;
+}
+//96
+
 }
