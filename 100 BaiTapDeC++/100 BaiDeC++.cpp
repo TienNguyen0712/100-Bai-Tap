@@ -614,7 +614,44 @@ int main() {
     cout << t << "/" << m << endl;
 }
 //38
+#include <bits/stdc++.h>
 
+using namespace std;
+
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    if (n <= 3) return true;
+    if (n % 2 == 0 || n % 3 == 0) return false;
+
+    for (int i = 5; i * i <= n; i += 6) {
+        if (n % i == 0 || n % (i + 2) == 0)
+            return false;
+    }
+    return true;
+}
+
+int main() {
+    int k;
+    cin >> k;
+
+    vector<int> primes;
+    int count = 0, num = 2;
+
+    while (count < k) {
+        if (isPrime(num)) {
+            primes.push_back(num);
+            count++;
+        }
+        num++;
+    }
+
+    for (int prime : primes) {
+        cout << prime << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
 //39
 #include<iostream>
 #include <cmath>
@@ -636,7 +673,36 @@ int main(){
 }
 
 //40
+#include <bits/stdc++.h>
 
+using namespace std;
+
+bool isPrime(int n) {
+	if(sqrt(n) * sqrt(n) == (int)sqrt(n) * (int)sqrt(n)){ return true;}else{return false;}
+}
+
+int main() {
+    int k;
+    cin >> k;
+
+    vector<int> primes;
+    int count = 0, num = 0;
+
+    while (count < k) {
+        if (isPrime(num)) {
+            primes.push_back(num);
+            count++;
+        }
+        num++;
+    }
+
+    for (int prime : primes) {
+        cout << prime << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
 //41
 #include<iostream>
 using namespace std;
@@ -1084,4 +1150,30 @@ int tong(int a[], int n){
 }
 //96
 
+//100
+#include <bits/stdc++.h>
+
+using namespace std;
+void timMaxMin(int a[], int d){
+    int max = INT_MIN, min = INT_MAX, m, n;
+    for(int x = 0; x < d ; x++){
+        if(a[x] > max) {max = a[x]; m = x;}
+        if(a[x] < min) {min = a[x]; n = x;}
+    }
+    cout << max << " " << m << endl;
+    cout << min << " " << n;
+}
+void nhap(int a[], int d){
+    for(int i = 0; i  < d; i++){
+        cin >> a[i];
+    }
+}
+int main(){
+    int n;
+    cin >> n;
+    int a[n];
+    nhap(a, n);
+    timMaxMin(a, n);
+    return 0;
+}
 }
